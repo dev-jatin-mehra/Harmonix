@@ -66,4 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-console.log("THIS IS A PROJECT BY JATIN<DEEPAK<DINESH supported By PRIYANSHU KUMAR AKA BlackShort")
+// console.log("THIS IS A PROJECT BY JATIN<DEEPAK<DINESH supported By PRIYANSHU KUMAR AKA BlackShort")

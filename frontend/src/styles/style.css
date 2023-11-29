@@ -21,7 +21,7 @@ body {
   /* position: fixed; */
   width: 98%;
   height: 95%;
-  /* border: 1px solid #fff; */
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -32,13 +32,14 @@ body {
   width: 23%;
   height: 88%;
   color: black;
-  background-color: #61677a;
+  background: linear-gradient(to bottom, #8b9fa3, #626262);
   /* border: 1px solid #fff; */
   /* border-radius: 1rem; */
 }
 
 .top .list {
   border-radius: 12px;
+  background: linear-gradient(to bottom, #8b9fa3, #626262);
 }
 
 .top .show {
@@ -61,7 +62,7 @@ body {
   position: relative;
   top: 8px;
   /* border: 1px solid white; */
-  background-color: #61677a;
+  background: linear-gradient(to top, #7b5c5c, #816d6b);
   border-radius: 12px;
   /* border-radius: 1rem; */
 }

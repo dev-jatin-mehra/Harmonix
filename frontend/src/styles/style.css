@@ -11,7 +11,7 @@ body {
   font-family: "Raleway", sans-serif;
   width: 100%;
   height: 100vh;
-  background-color: #001c30;
+  background-color: #212a3e;
   display: grid;
   place-items: center;
 }
@@ -32,14 +32,14 @@ body {
   width: 23%;
   height: 88%;
   color: black;
-  background: linear-gradient(to bottom, #8b9fa3, #626262);
+  background: linear-gradient(to bottom, #e8eddf, #58efec);
   /* border: 1px solid #fff; */
   /* border-radius: 1rem; */
 }
 
 .top .list {
   border-radius: 12px;
-  background: linear-gradient(to bottom, #8b9fa3, #626262);
+  background: linear-gradient(to bottom, #8b9fa3, #a4c3b2);
 }
 
 .top .show {
@@ -62,7 +62,7 @@ body {
   position: relative;
   top: 8px;
   /* border: 1px solid white; */
-  background: linear-gradient(to top, #7b5c5c, #816d6b);
+  background: linear-gradient(to top, #cfe1b9, #cfdbd5);
   border-radius: 12px;
   /* border-radius: 1rem; */
 }

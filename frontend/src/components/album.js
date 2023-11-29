@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(PhotoName);
             photo.src = PhotoName;
             // console.log(photo);
-
+            
             fetchAndPlaySong(songTitle);
         });
     });

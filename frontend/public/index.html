@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/src/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Harmonix</title>
+</head>
+
+<body>
+    <header class="top">
+        <div class="list">
+            <h1><a class="home" href="">Home</a></h1>
+            <div class="option">
+                <a href="album.html">
+                    <h4 class="active"><span></span><i class="bi bi-stars"></i>Quick Picks</h4>
+                </a>
+                <h4 class="active"><span></span><i class="bi bi-vinyl-fill"></i>Last Listening</h4>
+                <a href="album.html">
+                    <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Playlist</h4>
+                </a>
+            </div>
+            <div class="songs-list">
+                <li class="item" id="1">
+                    <span>01</span>
+                    <img src="https://themusicalsafari.com/wp-content/uploads/2023/10/652c39c7f2cef.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Tu Hai Kahan<br></h5>
+                        <div class="subtitle">AUR</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="1"></i>
+                </li>
+                <li class="item" id="2">
+                    <span>02</span>
+                    <img src="https://i1.sndcdn.com/artworks-cKerYefwRA7HLz4H-YbCzyw-t500x500.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Chorni<br></h5>
+                        <div class="subtitle">Sidhu MooseWala</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="2"></i>
+                </li>
+                <li class="item" id="3">
+                    <span>03</span>
+                    <img src="https://pagalworldi.com/siteuploads/thumb/sft36/17696_4.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Hasti Rahe Tu<br></h5>
+                        <div class="subtitle">Paradox</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="3"></i>
+                </li>
+                <li class="item" id="4">
+                    <span>04</span>
+                    <img src="https://c.saavncdn.com/577/Hamari-Adhuri-Kahani-Hindi-2015-500x500.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Hamari Adhuri Kahani<br></h5>
+                        <div class="subtitle">Arijit Singh</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="4"></i>
+                </li>
+                <li class="item" id="5">
+                    <span>05</span>
+                    <img src="https://c.saavncdn.com/544/Check-Kar-Punjabi-2023-20230228222704-500x500.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Check It Out<br></h5>
+                        <div class="subtitle">parmish Verma</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="5"></i>
+                </li>
+                <li class="item" id="6">
+                    <span>06</span>
+                    <img src="https://c.saavncdn.com/793/Back-2-Love-Hindi-2014-20190924060930-500x500.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Zaroori Tha<br></h5>
+                        <div class="subtitle">Rahet Fateh Ali Khan</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="6"></i>
+                </li>
+                <li class="item" id="7">
+                    <span>07</span>
+                    <img src="https://pagalworld.cool/siteuploads/thumb/sft1/308_resize2x_250x250.webp" alt="">
+                    <div class="wrap">
+                        <h5>Heeriye<br></h5>
+                        <div class="subtitle">Arijit Singh</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="7"></i>
+                </li>
+                <li class="item" id="8">
+                    <span>08</span>
+                    <img src="https://cover.djpunjab.is/46180/300x700/same-beef-(full-song)-sidhu-moose-wala.webp"
+                        alt="">
+                    <div class="wrap">
+                        <h5>Same Beef<br></h5>
+                        <div class="subtitle">Sidhu MooseWala</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="8"></i>
+                </li>
+                <li class="item" id="9">
+                    <span>09</span>
+                    <img src="https://m.media-amazon.com/images/I/819JC34T2jL.jpg" alt="">
+                    <div class="wrap">
+                        <h5>Kesariya<br></h5>
+                        <div class="subtitle">Arijit Singh</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="9"></i>
+                </li>
+                <li class="item" id="10">
+                    <span>10</span>
+                    <img src="https://imgs.search.brave.com/IBgS6JdGu7jf-5ieRHmPv6gdqrLzh-Xz646edPh8XTU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvc2h1/Ymgtb25lLWxvdmUt/djAtcURhQU0wQWpp/bTZfTGFRNFYteDVK/YzZEZHY5YzRmSXFR/MS1VdG5zWlhVOC5q/cGc_YXV0bz13ZWJw/JnM9MjE1MDkzZmRh/YWVhMzQ3OGIyZjNh/YWNiOWMwNDg5YjBj/NWY1YTNkZQ"
+                        alt="">
+                    <div class="wrap">
+                        <h5>One Love<br></h5>
+                        <div class="subtitle">Shubh</div>
+                    </div>
+                    <i class="bi playlistplay bi-play-fill" id="10"></i>
+                </li>
+            </div>
+        </div>
+
+        <div class="show">
+            <nav>
+                <ul>
+                    <!-- <a class="go" href="">
+                        Songs<span></span>
+                    </a>
+                    <a class="go" href="">
+                        Liked<span></span>
+                    </a>
+                    <a class="go" href="">
+                        About<span></span>
+                    </a> -->
+                    <h3 class="go">. . . . HARMONIX . . . .</h3>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...." onkeyup="my">
+                </div>
+            </nav>
+            <div class="top-charts">
+                <div class="h3">
+                    <h3>. . . New Releases</h3>
+                    <div class="btns">
+                        <i class="bi bi-arrow-left-circle left" id="TC_left"></i>
+                        <i class="bi bi-arrow-right-circle right" id="TC_right"></i>
+                    </div>
+                </div>
+                <div class="top-song">
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(11)"
+                                src="https://i1.sndcdn.com/artworks-q4cK6Qte7DNl31zz-FY8D5Q-t500x500.jpg">
+                            <i class="bi bi-play-circle" id="11"></i>
+                        </div>
+                        <h5 id="ab1">Drown</h5>
+                        <div class="subtitle">Martin Garrix</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(12)"
+                                src="https://pagalnew.com/coverimages/kalaastar-honey-3.0-500-500.jpg">
+                            <i class="bi bi-play-circle" id="12"></i>
+                        </div>
+                        <h5 id="ab2">Kalaastar</h5>
+                        <div class="subtitle">Yo Yo Honey Singh</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(13)"
+                                src="https://i0.wp.com/hiphopkit.com/uploads/2023/03/Marshmello-Grown-Man-artwork.jpeg?ulb=false&ssl=1&resize=320,350">
+                            <i class="bi bi-play-circle" id="13"></i>
+                        </div>
+                        <h5 id="ab3">Grown Man</h5>
+                        <div class="subtitle">Marshmello</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(14)"
+                                src="https://i1.sndcdn.com/artworks-CkXKo5iJQ5aPZzp6-ZReq2w-t500x500.jpg">
+                            <i class="bi bi-play-circle" id="14"></i>
+                        </div>
+                        <h5 id="ab4">Chaleya</h5>
+                        <div class="subtitle">Arijit Singh</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(15)"
+                                src="https://external-preview.redd.it/fresh-jack-harlow-lovin-on-me-v0-Xx3zPCb54_DnWzUP6gK_ZomrXR3oO-sMULOmAIKZbTo.jpg?auto=webp&s=3cd6a142741c233353c7b4aa8655971f305801d1">
+                            <i class="bi bi-play-circle" id="15"></i>
+                        </div>
+                        <h5 id="ab5">Lovin On Me</h5>
+                        <div class="subtitle">Jack Harlow</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(16)"
+                                src="https://pagalfree.com/images/128Mulaqat%20-%20Prateek%20Kuhad%20128%20Kbps.jpg">
+                            <i class="bi bi-play-circle" id="16"></i>
+                        </div>
+                        <h5 id="ab6">Mulaqat</h5>
+                        <div class="subtitle">Prateek Kuhad</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(17)"
+                                src="https://i1.sndcdn.com/artworks-D1261fiTzgCbmDme-Kf1F5w-t500x500.jpg">
+                            <i class="bi bi-play-circle" id="17"></i>
+                        </div>
+                        <h5 id="ab7">Sekai No Owari</h5>
+                        <div class="subtitle">One Piece</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(18)"
+                                src="https://cover.djpunjab.is/54494/300x700/hass-hass-diljit-dosanjh.webp">
+                            <i class="bi bi-play-circle" id="18"></i>
+                        </div>
+                        <h5 id="ab8">Hass Hass</h5>
+                        <div class="subtitle">Diljit/Sia</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(19)"
+                                src="https://pagalnew.com/coverimages/ruaan-tiger-3-500-500.jpg">
+                            <i class="bi bi-play-circle" id="19"></i>
+                        </div>
+                        <h5 id="ab9">Ruan</h5>
+                        <div class="subtitle">Pritam</div>
+                    </li>
+                    <li class="song_item">
+                        <div class="img_play">
+                            <img onclick="myfunction(20)"
+                                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_wmg/20230818062339424/5054197755538/1692342348134/resources/5054197755538.jpg">
+                            <i class="bi bi-play-circle" id="20"></i>
+                        </div>
+                        <h5 id="ab10">Bachke Bachke</h5>
+                        <div class="subtitle">Karan Aujla</div>
+                    </li>
+                </div>
+            </div>
+            <div class="Artists">
+                <div class="second-h3">
+                    <h3>. . . Radio</h3>
+                    <div class="second-btns">
+                        <i class="bi bi-arrow-left-circle left" id="Artist_left"></i>
+                        <i class="bi bi-arrow-right-circle right" id="Artist_right"></i>
+                    </div>
+                </div>
+                <div class="main-artist">
+                    <li class="song_artist" id="21">
+                        <div class="img_artist">
+                            <img
+                                src="https://media.pitchfork.com/photos/61d5fa911b710fb5ce48ed9f/master/w_775,c_limit/The-Weeknd-Dawn-FM.jpg">
+                        </div>
+                        <div class="subtitle">Hass Hass</div>
+                    </li>
+                    <li class="song_artist" id="22">
+                        <div class="img_artist">
+                            <img
+                                src="https://rovimusic.rovicorp.com/image.jpg?c=F9GQrmdmT1d0hwYV_sMjmYAf7E_1E-2MlBBPmPAXRBU=&f=4">
+                        </div>
+                        <div class="subtitle">Sia</div>
+                    </li>
+                    <li class="song_artist" id="23">
+                        <div class="img_artist">
+                            <img
+                                src="https://a10.gaanacdn.com/gn_img/artists/Dk9KNk23Bx/k9KNqJJbBx/size_xl_1638898900.webp">
+                        </div>
+                        <div class="subtitle">Arijit Singh</div>
+                    </li>
+                    <li class="song_artist" id="24">
+                        <div class="img_artist">
+                            <img src="https://c.saavncdn.com/artists/Gajendra_Verma_005_20230527103958_500x500.jpg">
+                        </div>
+                        <div class="subtitle">Gajendra Verma</div>
+                    </li>
+                    <li class="song_artist" id="25">
+                        <div class="img_artist">
+                            <img
+                                src="https://www.eminem.net/wp-content/uploads/2020/12/eminem-the-marshall-mathers-lp-2-album-cover.jpg">
+                        </div>
+                        <div class="subtitle">Eminem</div>
+                    </li>
+                    <li class="song_artist" id="26">
+                        <div class="img_artist">
+                            <img
+                                src="https://i0.wp.com/hiphopkit.com/uploads/2022/10/Justin-Bieber-Purpose-Album-artwork.webp?w=350&ulb=true&ssl=1">
+                        </div>
+                        <div class="subtitle">Justin Beiber</div>
+                    </li>
+                    <li class="song_artist" id="27">
+                        <div class="img_artist">
+                            <img
+                                src="https://people.com/thmb/Dm39HuJ8gVWk1FRlezyGyifkLkU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-2-c7e2e4bd213b4c189cd75399622bae6b.jpg">
+                        </div>
+                        <div class="subtitle">Taylor Swift</div>
+                    </li>
+                    <li class="song_artist" id="28">
+                        <div class="img_artist">
+                            <img
+                                src="https://pianity.com/_next/image?url=https://pianity.fra1.digitaloceanspaces.com/auto-artists/anuv-jain/bioLongPictureUrl&w=3840&q=75">
+                        </div>
+                        <div class="subtitle">Anuv Jain</div>
+                    </li>
+                    <li class="song_artist" id="29">
+                        <div class="img_artist">
+                            <img src="https://ik.imagekit.io/j83rchiauw/A_List_Star/KingRapperBiography.jpg">
+                        </div>
+                        <div class="subtitle">Garry Sandhu</div>
+                    </li>
+                    <li class="song_artist" id="30">
+                        <div class="img_artist">
+                            <img src="https://c.saavncdn.com/artists/Badshah_005_20230608084021_500x500.jpg">
+                        </div>
+                        <div class="subtitle">Badshah</div>
+                    </li>
+                    <li class="song_artist" id="31">
+                        <div class="img_artist">
+                            <img
+                                src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_zeemusic/2023-10/10/06-28/ZMC06948.jpg">
+                        </div>
+                        <div class="subtitle">Honey Singh</div>
+                    </li>
+                    <li class="song_artist" id="32">
+                        <div class="img_artist">
+                            <img src="https://images.genius.com/3e9e79a7b1f415209dae84b5259757e3.1000x1000x1.jpg">
+                        </div>
+                        <div class="subtitle">Alan Walker</div>
+                    </li>
+                    <li class="song_artist" id="33">
+                        <div class="img_artist">
+                            <img src="https://c.saavncdn.com/artists/Udit_Narayan_500x500.jpg">
+                        </div>
+                        <div class="subtitle">Udit Narayan</div>
+                    </li>
+                    <li class="song_artist" id="34">
+                        <div class="img_artist">
+                            <img src="http://starsunfolded.com/wp-content/uploads/2017/07/Kishore-Kumar.jpg">
+                        </div>
+                        <div class="subtitle">Kishore Kumar</div>
+                    </li>
+                </div>
+            </div>
+
+            <div class="Albums">
+                <div class="title">
+                    <h3>. . . Albums</h3>
+                    <div class="third-btns">
+                        <i class="bi bi-arrow-left left" id="Album_left"></i>
+                        <i class="bi bi-arrow-right right" id="Album_right"></i>
+                    </div>
+                </div>
+                <a href="album.html">
+                    <div class="main-album">
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-500-Arcade-Fire-Funeral.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Funeral</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-495-Boyz-II-Men-II.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Boyz II Men</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-491-harry-styles-fine-line.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Fine Line</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-487-Black-Flag-Damaged.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Black Flag</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-486-john-mayer-continuum-x.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Continumm</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-477-Howlin-Wolf-Moanin-in-the-Moonlight.jpg?w=1000">
+                            </div>
+                            <div class="subtitle">Moaning In the Moonlight</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://charts-static.billboard.com/img/2023/11/straykids-z1b-rockstar-394-344x344.jpg">
+                            </div>
+                            <div class="subtitle">Rockstar</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://charts-static.billboard.com/img/2023/11/taylor-swift-9sy-1989taylorsversion-075-344x344.jpg">
+                            </div>
+                            <div class="subtitle">1989</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://rollingstoneindia.com/wp-content/uploads/2018/01/Lead-image-e1515397075890-960x872.jpg">
+                            </div>
+                            <div class="subtitle">Class Sikh</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://rollingstoneindia.com/wp-content/uploads/2018/01/Skrat-Bison-300x300.jpg">
+                            </div>
+                            <div class="subtitle">Bison</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img
+                                    src="https://lastfm.freetls.fastly.net/i/u/300x300/a167a6d0c034d66bba15ed3b141d70dc.jpg">
+                            </div>
+                            <div class="subtitle">Groove</div>
+                        </li>
+                        <li class="song_album">
+                            <div class="img_album">
+                                <img src="https://s.saregama.tech/image/c/fh_150/a/82/d2/mr-x-in-bombay_1438249755.jpg">
+                            </div>
+                            <div class="subtitle">Mr.X in Bombay</div>
+                        </li>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="play">
+            <div class="mixer" id="wave"> <!--class="start" -->
+                <div class="mixer1 up"></div>
+                <div class="mixer2 up"></div>
+                <div class="mixer3 up"></div>
+            </div>
+            <img src="https://images.genius.com/3e9e79a7b1f415209dae84b5259757e3.1000x1000x1.jpg" alt="" class="img"
+                id="poster_play">
+            <div class="wrap-2">
+                <h5 id="song">
+                    SONG
+                </h5>
+                <div class="sub" id="Artist">Artist</div>
+            </div>
+            <div class="control">
+                <i class="bi shuffle bi-shuffle"></i>
+                <i class="bi heart bi-heart"></i>
+                <!-- <i class="bi bi-arrow-down-circle" id="download-music"></i> -->
+                <div class="playpause">
+                    <i class="bi bi-skip-start-fill" id="prev"></i>
+                    <i class="bi bi-play-circle-fill" id="playButton"></i>
+                    <i class="bi bi-skip-end-fill" id="next"></i>
+                </div>
+            </div>
+            <span id="currentstart">00:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar-2" id="bar-2"></div>
+                <div class="position"></div>
+            </div>
+            <span id="currentend">00:00</span>
+            <!-- <div class="volume">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="volume">
+                <div class="vol-bar"></div>
+                <div class="vol-pos" id="vol-bar"></div>
+            </div> -->
+        </div>
+    </header>
+
+    <audio id="audioPlayer">
+        <source id="audioSource" type="audio/mp3">
+    </audio>
+
+    <script src="/frontend/src/index.js"></script>
+    <script src="/frontend/src/components/button.js"></script>
+    <script src="/frontend/src/components/radio.js"></script>
+</body>
+
+</html>

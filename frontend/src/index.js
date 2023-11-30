@@ -65,18 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             fetchAndPlaySong(songTitle);
 
-
-            const prev = document.getElementById("prev");
-            prev.addEventListener("click", () => {
-                const prevNo = document.getElementById(`${idValue - 1}`);
-                num = prevNo.id;
-                // const myNumber = Number(num)
-                console.log(typeof num);
-                console.log(num);
-            });
         });
     });
 });
+
 
 // NEW RELEASES
 

@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(photo);
 
             fetchAndPlaySong(songTitle);
-
         });
     });
 });

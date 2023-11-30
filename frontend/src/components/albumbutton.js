@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const audioPlayer = document.getElementById("audioPlayer");
+    const playButton = document.getElementById("playButton");
 
     var nameDivs = document.querySelectorAll('.name');
 
@@ -13,12 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 audioPlayer.pause()
                 playPauseIcon.classList.remove('bi-pause-circle');
                 playPauseIcon.classList.add('bi-play-circle');
-            } else {
+                playButton.classList.add('bi-play-circle');
+                playButton.classList.remove("bi-pause-circle");
+            }
+            else {
                 audioPlayer.play();
                 playPauseIcon.classList.remove('bi-play-circle');
                 playPauseIcon.classList.add('bi-pause-circle');
+                playButton.classList.remove('bi-play-circle');
+                playButton.classList.add("bi-pause-circle");
+
             }
 
+            playButton.setAttribute('data-playing', isPlaying ? 'true' : 'false');
             playPauseIcon.setAttribute('data-playing', isPlaying ? 'false' : 'true');
         });
     });

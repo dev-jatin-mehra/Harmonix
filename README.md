@@ -34,7 +34,7 @@ The Harmonix project is a music website that currently offers a limited library 
 While the current focus is on the existing 34-song library, contributions are welcome for improvements and future features. Fork the repository and create a pull request with your suggestions.
 
 ## License
-This project is licensed under MIT License. See the LICENSE.md file for details.
+This project is licensed under MIT License. See the [MIT LICENSE](LICENSE.txt) for details.
 
 ## Acknowledgments
 Special thanks to the artists and creators of the 34 featured songs.

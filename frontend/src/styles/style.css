@@ -303,6 +303,10 @@ body {
   align-items: center;
 }
 
+.top .play .control .heart:hover {
+  cursor: pointer;
+}
+
 .top .play .control .bi {
   cursor: pointer;
   outline: none;

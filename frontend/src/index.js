@@ -64,9 +64,73 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(photo);
 
             fetchAndPlaySong(songTitle);
+
+            const prev = document.getElementById("prev");
+            prev.addEventListener("click", () => {
+                idValue = idValue - 1;
+                prevPlay(`${parseInt(idValue)}`);
+
+                // console.log(hi);
+                // idValue=idValue-1;
+            });
+            const next = document.getElementById('next');
+            console.log(next);
+            next.addEventListener("click", () => {
+                idValue = parseInt(idValue) + 1;
+                console.log(idValue);
+                nextPlay(`${parseInt(idValue)}`);
+            });
+
         });
     });
 });
+
+
+
+function prevPlay(idh) {
+    const prevNo = document.getElementById(`${idh}`);
+    console.log(prevNo);
+    const prevH5 = prevNo.querySelector('h5');
+    console.log(prevH5);
+    const prevH5text = prevH5.textContent;
+    console.log(prevH5text);
+
+    const named = document.getElementById('song');
+    named.innerText = prevH5text
+
+    const artistd = document.getElementById('Artist');
+    const subtitleArtist = prevNo.querySelector('.subtitle');
+    const textSub = subtitleArtist.textContent
+    console.log(textSub);
+    artistd.innerText = textSub;
+
+    const posterD = document.getElementById('poster_play');
+    const imageD = prevNo.querySelector('img');
+    const imageSrc = imageD.src;
+    posterD.src = imageSrc;
+    fetchPlaySong(prevH5text);
+}
+function nextPlay(idh2) {
+    const nextNo = document.getElementById(`${idh2}`);
+    console.log(nextNo);
+    const nextH5 = nextNo.querySelector('h5');
+    const nextH5text = nextH5.textContent;
+    console.log(nextH5text);
+    const namenxt = document.getElementById('song');
+    namenxt.innerText = nextH5text
+
+    const artistnxt = document.getElementById('Artist');
+    const subtitleArtistnxt = nextNo.querySelector('.subtitle');
+    const textSubnxt = subtitleArtistnxt.textContent
+    console.log(textSubnxt);
+    artistnxt.innerText = textSubnxt;
+
+    const posterDnxt = document.getElementById('poster_play');
+    const imageDnxt = nextNo.querySelector('img');
+    const imageSrcnxt = imageDnxt.src;
+    posterDnxt.src = imageSrcnxt;
+    fetchPlaySong(nextH5text);
+}
 
 
 // NEW RELEASES

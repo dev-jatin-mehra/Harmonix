@@ -24,7 +24,7 @@ The Harmonix project is a music website that currently offers a limited library 
 ## Creators:
 - This project was built with @DineshJoshi2005 and @DeepakBirkhani..
 -
-- And a very big thank you to priyanshu(https://github.com/BlackShort) as this guy helped in every stage of this project.The project is not that too heavy or something ,but yes learnt a lot from this guy...
+- And a very big thank you to [priyanshu](https://github.com/BlackShort)] as this guy helped in every stage of this project.The project is not that too heavy or something ,but yes learnt a lot from this guy...
 
 ## Installation
 1. Clone the repository: git clone [repository_url]

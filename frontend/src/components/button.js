@@ -21,6 +21,7 @@ let main = document.getElementsByClassName('main-artist')[0];
 move_right.addEventListener('click', () => {
     main.scrollLeft += 894;
 })
+ 
 
 move_left.addEventListener('click', () => {
     main.scrollLeft -= 894;
@@ -44,13 +45,13 @@ album_left.addEventListener('click', () => {
 var heart = document.getElementById("heart");
 function Toggle() {
     if (heart.classList.contains("bi-heart")) {
-        heart.classList.remove("bi-heart");
-        heart.classList.add("bi-heart-fill");
+        heart.classList.toggle("bi-heart");
+        heart.classList.toggle("bi-heart-fill");
         heart.style.color = 'red';
     }
     else {
-        heart.classList.remove("bi-heart-fill");
-        heart.classList.add("bi-heart");
+        heart.classList.toggle("bi-heart-fill");
+        heart.classList.toggle("bi-heart");
         heart.style.color = "";
     }
 }

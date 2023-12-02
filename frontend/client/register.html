@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - Register</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="wrapping2">
+    <header>
+        <h2 class="logo"></h2>
+        <nav class="navigation">
+            <!-- <button class="login-button"></button> -->
+        </nav>
+    </header>
+
+    <div class="wrapper2">
+        <div class="form-box register" onsubmit="Register(event)">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="" id="Username" required>
+                    <label for="">Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="" id="Uemail" required>
+                    <label for="">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="" id="UPassword" required>
+                    <label for="">Password</label>
+                </div>
+
+                <div class="remember-forget">
+                    <label for=""><input type="checkbox" name="" id="">I agree to the terms & conditions</label>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+                <!-- <button type="submit" class="btn" onclick="Register()">Register</button> -->
+                <div class="login-register">
+                    <p>Already have an account? <a href="./login.html" class="register-link">Login</a></p>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
